@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Formulario de registro de usuarios - Actividad 2.6" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuarios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <form id="formRegistro">
+      <h1>Sistema de Registro</h1>
+      <h2>Completa tus datos personales</h2>
+
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required />
+      </div>
+
+      <div class="campo">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required />
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" />
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
+      </div>
+
+      <div class="campo">
+        <label>Género:</label>
+        <div class="radio-group">
+          <input type="radio" id="masculino" name="genero" value="Masculino" />
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="femenino" name="genero" value="Femenino" />
+          <label for="femenino">Femenino</label>
+        </div>
+      </div>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </main>
+
+</body>
+</html>
